@@ -1,0 +1,557 @@
+/*CSS reset code*/
+
+* {
+    margin: 0; /* Reset default margin and padding */
+    padding: 0; /* Reset default padding */ border: 0; /* Reset default border */
+    vertical-align: baseline; /* Align elements to the baseline */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+html {
+    font-family:Verdana, Geneva, Tahoma, sans-serif; /* Set a default font family */
+    font-size: 16px; /* Base font size */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+
+body {
+    line-height: 1.5; /* Improve readability with line height */
+    color: white; /* Default text color */
+    /*font-size: 16px; */
+    /*background-color: #1f0202e7; */
+    background: linear-gradient(to left, #1f0202e7, #935454e7, #1f0202e7);/* Gradient background */
+    /*background: linear-gradient(to right, #1f0202e7, #935454e7, #1f0202e7);*/
+    /*background: linear-gradient(to bottom, #1f0202e7, #935454e7, #1f0202e7);*/
+    /*background: linear-gradient(to top, #1f0202e7, #935454e7, #1f0202e7);*/
+    /*background-attachment: fixed; */ /* Fix the background during scroll */
+}
+h1:hover, h2:hover {
+    color: #f0a500; /* Yellow color on hover */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+    cursor: pointer; /* Pointer cursor on hover */
+    transform: scale(1.1);
+}
+section {
+    padding: 20px; /* Consistent padding for sections */
+    margin-bottom: 1px; /* Space between sections */
+    /*background-color: #1f0202e7;*/
+    color: white; /* Default text color for sections */
+    margin-bottom: 1px solid white  !important; /* White border between sections */
+}
+nav {
+   background-color: #1f0202e7; /* Semi-transparent background for navbar */
+    padding: 10px; /* Padding for navbar */
+    position: sticky; /* Make navbar sticky */
+    top: 0; /* Stick to the top */
+    width: 100%; /* Full width of the browser */
+    z-index: 1000; /* Ensure navbar is above other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+/* This section is for styling bootstrap navbar */
+.my-navbar {
+    background-color: #1f0202e7 !important; /* Semi-transparent background for navbar and overriding bootstrap default background-color*/
+}
+.my-navbar a {
+    color: white !important; /* White text color for links and overriding bootstrap default color*/
+    text-transform: uppercase !important; /* Uppercase text for links and overriding bootstrap default text */
+    font-weight: bold !important; /* Bold text for links and overriding bootstrap default font-weight */
+    margin: 0 10px !important; /* Margin between links and overriding bootstrap default margin */
+    padding: 10px 15px !important; /* Padding for links and overriding bootstrap default padding */
+    text-decoration: none !important; /* Remove underline from links and overriding bootstrap default text-decoration*/
+    border-radius: 5px !important; /* Rounded corners for links and overriding bootstrap default border-radius*/
+    transition: all 0.3s ease-in-out !important; /* Smooth transition for hover effects and overriding bootstrap default transition*/
+}
+.my-navbar a:hover {
+    background-color: #f0a500 !important; /* Yellow background on hover and overriding bootstrap default hover background-color*/
+    color: white !important; /* White text color on hover and overriding bootstrap default hover color*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; /* Subtle shadow on hover */
+    border-radius: 5px !important; /* Rounded corners on hover and overriding bootstrap default border-radius*/
+   /* color: black !important;*/
+    transition: all 0.3s ease-in-out !important;/* Smooth transition for hover effects */
+}
+/* Boostrap navbar styles ends here */ 
+
+/* Centering the navbar items */
+/*ul {
+    list-style: none; /* Remove default list styling from navbar */
+   /* display: flex;  Flexbox for horizontal layout of navbar */
+   /* gap: 50px;  Space between navbar items */;
+   /* justify-content: center;  Center navbar items 
+}
+*/
+/*ul li {
+    display: inline; 
+    margin: 0; 
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none; 
+    color: white; 
+    font-weight: bold;  
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.my-navbar ul li a:hover {
+    color: #f0a500;
+    background-color: white;
+    border-radius: 5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    margin-left: auto; 
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    overflow: hidden;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}   */
+
+/* Home Section */
+.main-container {
+    display: flex; /* Flexbox for layout for main container  */
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding around content */
+    height: auto; /* Full viewport height */
+    margin-bottom: 20px; /* Space below main container */
+   /* background-color: #1f0202e7;*/
+}
+.main-container h1 {
+
+    text-align: center; /* Center text (h1)  */
+    font-size: medium; /* Font size for h1 */
+    color: white; /* White text color for h1 */
+    padding: 20px; /* Padding around h1 */
+    margin-bottom: 1px; /* Space below h1 */ 
+}
+.main-container h1 span {
+    font-size: 2rem; /* Larger font size for span inside h1 */
+    font-weight: bold; /* Bold text for span inside h1 */ 
+    color: #f0a500; /* Yellow color for span inside h1 */
+}
+
+.main-container p {
+    font-size: 1rem; /* Font size for paragraph */
+    color: white; /* White text color for paragraph */
+    max-width: 600px; /* Max width for paragraph */
+    margin: 0 auto; /* Center paragraph */
+    line-height: 1.5; /* Line height for readability */
+    font-weight: lighter;
+    font-style: italic;
+    padding: 10px;
+}
+
+#home-section div img {
+    width: auto; /* Auto width for image */
+    height: 100vh; /* Height relative to viewport height */
+    border-radius: 10px; /* Rounded corners for image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for image */
+    display: block; /* Block display for image */
+    margin: 0 auto; /* Center image */
+}
+
+
+/* Picture Section */ 
+#picture-section {
+    width: 100%; /* Full width */
+    /* height: 100vh;*/
+    height: auto; /* Height relative to content */
+    padding: 20px; /* Padding around content */
+    /*background-color: #1f0202e7;*/
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Wrap items to next line if needed */
+    gap: 30px; /* Space between items */
+}
+
+/* Picture Section with Overlay Text */
+.picture-container {
+    position: relative; /* Relative positioning for overlay */
+    width: 400px; /* Fixed width for picture container */
+    height: 350px; /* Fixed height for picture container */
+    cursor: pointer; /* Pointer cursor on hover */
+    overflow: hidden; /* Hide overflow for image scaling */
+   /* margin: 10px; */
+    border-radius: 10px; /* Rounded corners for picture container */ 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for picture container */
+}
+.picture-container .photo img {
+    width: 100%; /* Full width for image */
+    height: 100%; /* Full height for image */
+    object-fit: cover; /* Cover the container */
+    transition: transform 0.3s ease-in-out; /* Smooth transform for hover effect */
+    border-radius: 10px; /* Rounded corners for image */
+    display: block; /* Block display for image */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+.picture-container .overlay {
+    position: absolute; /* Absolute positioning for overlay */
+    bottom: 0; /* Position at the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #fff; /* White text color for overlay */
+    padding: 10px; /* Padding around overlay text */
+    text-align: center; /* Center text in overlay */
+    height: auto; /* Auto height for overlay, based on content */
+    width: 100%; /* Full width for overlay */
+    text-align: center; /* Center text */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Smooth opacity transition */
+    border-radius: 0 0 10px 10px; /* Rounded corners for bottom of overlay */
+    overflow: hidden; /* Hide overflow */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+.picture-container:hover .photo img {
+    transform: scale(1.1); /* Scale image on hover */
+}
+.picture-container:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+} 
+.picture-container .overlay h3 {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-size: 1.2rem; /* Font size for overlay title */
+    font-weight: bold; /* Bold text for overlay title */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+     cursor: pointer; /* Pointer cursor on hover */
+
+}
+.picture-container .overlay h3:hover {
+    transform: scale(1.1); /* Slightly enlarge text on hover */
+   
+}
+.picture-container .overlay p {
+    font-size: 0.9rem; /* Font size for overlay description */
+    margin-top: 5px; /* Space above description */
+    line-height: 1.4; /* Line height for readability */
+    font-weight: lighter; /* Lighter font weight for description */
+    font-style: italic; /* Italic style for description */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+     cursor: pointer; /* Pointer cursor on hover */
+}
+.picture-container .overlay p:hover {
+    transform: scale(1.09); /* Slightly enlarge text on hover */    
+}
+
+/*
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+*/
+
+/* Video Section */
+#video-section iframe {
+    width: 400px;/* Fixed width for iframe */
+    height: 250px; /* Fixed height for iframe */
+    border-radius: 10px; /* Rounded corners for iframe */
+    border: none; /* Remove default border */
+    display: block; /* Block display for iframe */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for iframe */
+    transition: transform 0.3s ease-in-out; /* Smooth transform for hover effect */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+#video-section {
+    padding: 20px; /* Padding around content */
+    width: 100%; /* Full width */
+   /* background-color: #1f0202e7;*/
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Column layout */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 20px; /* Space between items */
+}
+#video-section h2 {
+    text-align: center; /* Center text */
+    font-size: medium; /* Font size for h2 */
+    margin-bottom: 20px; /* Space below h2 */
+    color: white; /* White text color for h2 */
+    padding: 20px; /* Padding around h2 */
+}
+#video-section h2 span {
+    font-size: 2em;/* Larger font size for span inside h2 */
+    font-weight: bold; /* Bold text for span inside h2 */
+    color: #f0a500; /* Yellow color for span inside h2 */
+}
+
+
+.videos-container {
+    display: flex;/* Flexbox for layout */
+    flex-wrap: wrap; /* Wrap items to next line if needed */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Space between items */
+}
+
+/* Contact Section */
+
+#contact-section {
+    width: 100%; /* Full width */
+    height: auto; /* Height relative to content */
+    padding: 20px; /* Padding around content */
+   /* background-color: #1f0202e7;*/
+    color: white; /* White text color */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column;/* Column layout */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    gap: 20px;/* Space between items */
+    margin-bottom: 20px; /* Space below contact section */
+}
+
+#contact-section form {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Column layout */
+    /*gap: 10px;*/
+    width: 500px; /* Fixed width for form */
+    max-width: 100%; /* Responsive max width */
+    justify-content: center;  /* Center items vertically */
+    padding: 20px; /* Padding around form */
+}
+#contact-section form input {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Light border for input fields */
+    border-radius: 5px; /* Rounded corners for input fields */
+    font-size: 16px; /* Font size for input fields */
+    color: #333; /* Dark text color for input fields */
+    background-color: white; /* White background for input fields */
+    gap: 10px; /* Space between input fields */
+}
+#contact-section form input[type="submit"] {
+    background-color: #f0a500; /* Yellow background for submit button */
+    color: white; /* White text color for submit button */
+    border: none;/* Remove default border for submit button */
+    padding: 10px;/* Padding inside submit button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: bold;/* Bold text for submit button */
+    text-transform: uppercase; /* Uppercase text for submit button */
+   /* transition: background-color 0.3s;*/
+    border-radius: 10px; /* Rounded corners for submit button */
+    text-align: center; /* Center text */
+    width: 50%; /* Half width for submit button */
+    margin: 0 auto; /* Center submit button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for submit button */
+    font-size: 20px; /* Font size for submit button */
+    height: 70px; /* Height for submit button */
+    
+}
+#contact-section form input[type="submit"]:hover {
+    background-color: white; /* White background on hover */
+    color: #f0a500; /* Yellow text color on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+    margin-left: auto; /* Align to the right */
+
+}
+
+#contact-section form:focus-within {  
+    box-shadow: 0 0 5px #f0a500; /* Yellow shadow when form is focused */
+    border-radius: 5px; /* Rounded corners when form is focused */
+    transition: all 0.3s ease-in-out; /* Smooth transition for focus effects */
+}
+
+#contact-section form input:focus-within {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px #f0a500;/* Yellow shadow when input is focused */
+    border-radius: 5px; /* Rounded corners when input is focused */
+    transition: all 0.3s ease-in-out; /* Smooth transition for focus effects */
+}
+#contact-section h2 {
+    text-align: center; /* Center text */
+    font-size: medium; /* Font size for h2 */
+    margin-bottom: 20px; /* Space below h2 */
+    color: white; /* White text color for h2 */
+    padding: 20px; /* Padding around h2 */
+    margin-bottom: 1px; /* Space below h2 */
+}
+#contact-section h2 
+ span {
+    font-size: 2rem; /* Larger font size for span inside h2 */
+    font-weight: bold; /* Bold text for span inside h2 */
+    color: #f0a500; /* Yellow color for span inside h2 */
+}
+
+/* Footer */
+
+footer {
+    /*background-color: #1f0202e7;*/
+    color: white; /* White text color */
+    text-align: center; /* Center text */
+    padding-top: 70px; /* Padding around content */
+    padding-bottom: 40px; /* Padding around content */
+    position: relative; /* Relative positioning for footer */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-top: 1px solid white; /* White border at the top of footer */
+    margin-top: 50px; /* Space above footer */
+    margin-bottom: 50px; /* Space below footer */
+    font-size: 0.9rem; /* Font size for footer text */
+    font-weight: lighter; /* Lighter font weight for footer text */
+    font-style: italic; /* Italic style for footer text */
+
+}
+footer a {
+    color: #f0a500; /* Yellow color for links in footer */
+    /* text-decoration: none; Remove underline from links */
+    font-weight:lighter; /* Bold text for links */
+    font-style: italic; /* Italic style for links */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 1250px) {
+   /* nav ul {
+        flex-direction: column;
+        align-items: center;
+    }*/
+    
+    .my-navbar {
+        background-color: #1f0202e7 !important;
+        color: black !important;
+    }
+    .my-navbar a {
+        color: #f0a500 !important;
+    }
+    .my-navbar a:hover {
+        background-color: white !important;
+        color: #f0a500 !important;
+        transition: all 0.3s ease-in-out !important;
+    }
+    #home-section div img {
+        height: 100vh !important;
+    }
+    .main-container h1 {
+        font-size: 1.5rem;
+    }
+    #picture-section {
+        flex-direction: column;
+        align-items: center;
+    }
+   /* #picture-section img {
+    width: 100%;
+    height: auto;
+    }
+    */
+    #video-section h2 {
+        font-size: 1.5rem;
+    }
+    #video-section .videos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+    #contact-section form {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .my-navbar {
+        background-color: #1f0202e7 !important;
+        color: black !important;
+    }
+    .my-navbar a {
+        color: #f0a500 !important;
+    }
+   .my-navbar a:hover {
+        background-color: white !important;
+        color: #f0a500 !important;
+        transition: all 0.3s ease-in-out !important;
+    }
+    #home-section div img {
+        height: 100vh !important;
+    }
+    .main-container h1 {
+        font-size: 1.3rem;
+    }
+    #picture-section {
+        flex-direction: column;
+        align-items: center;
+    }
+   /* #picture-section img {
+        width: 100%;
+        height: auto;
+    }*/
+   
+    
+    #video-section .videos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #video-section h2 {
+        font-size: 1.3rem;
+    }
+     #video-section iframe {
+        width: 100%;
+        height: auto;
+    }
+    #contact-section form {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .my-navbar {
+        background-color: #1f0202e7 !important;
+        color: black !important;
+    }
+    .my-navbar a {
+        color: #f0a500 !important;
+    }
+    .my-navbar a:hover {
+        background-color: white !important;
+        color: #f0a500 !important;
+        transition: all 0.3s ease-in-out !important;
+    }
+    #home-section div img {
+        height: 100vh !important;
+    }
+    .main-container h1 {
+        font-size: 1.2rem;
+    }
+    #picture-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    #picture-section img {
+        width: 100%;
+        height: auto;
+    }
+    #video-section iframe {
+        width: 100%;
+        height: auto;
+    }
+    #video-section h2 {
+        font-size: 1.2rem;
+    }
+    #video-section .videos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact-section form {
+        width: 90%;
+    }
+}
