@@ -254,9 +254,9 @@ ul li a {
 */
 
 /* Video Section */
-#video-section iframe {
+#video-section video {
     width: 400px;/* Fixed width for iframe */
-    height: 250px; /* Fixed height for iframe */
+    height: 400px; /* Fixed height for iframe */
     border-radius: 10px; /* Rounded corners for iframe */
     border: none; /* Remove default border */
     display: block; /* Block display for iframe */
