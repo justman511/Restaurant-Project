@@ -205,6 +205,11 @@ ul li a {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for image */
     display: block; /* Block display for image */
 }
+.about-container img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+    cursor: pointer; /* Pointer cursor on hover */
+}
 .about-container p {
     font-size: 1rem; /* Font size for paragraph */
     color: white; /* White text color for paragraph */
@@ -214,6 +219,12 @@ ul li a {
     font-style: italic; /* Italic style for paragraph */
     padding: 10px; /* Padding around paragraph */
     text-align: justify; /* Justify text */
+}
+.about-container div p:hover {
+    color: #f0a500; /* Yellow color on hover */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+    cursor: pointer; /* Pointer cursor on hover */
+    transform: scale(1.05); /* Slightly enlarge text on hover */
 }
 
 
