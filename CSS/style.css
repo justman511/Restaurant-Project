@@ -200,7 +200,7 @@ ul li a {
 }
 .about-container img {
     width: 650px; /* Fixed width for image */
-    height: 400px; /* Fixed height for image */
+    height: 450px; /* Fixed height for image */
     border-radius: 10px; /* Rounded corners for image */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for image */
     display: block; /* Block display for image */
