@@ -158,6 +158,67 @@ ul li a {
     margin: 0 auto; /* Center image */
 }
 
+/* About Section */
+#about-section {
+    width: 100%; /* Full width */
+    height: 800px; /* Height relative to content */
+    padding: 20px; /* Padding around content */
+    overflow: hidden; /* Hide overflow */
+   /* background-color: #1f0202e7;*/
+    color: white; /* White text color */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column;/* Column layout */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    gap: 20px;/* Space between items */
+    margin-bottom: 20px; /* Space below about section */
+}
+#about-section h2 {
+    text-align: center; /* Center text */
+    font-size: medium; /* Font size for h2 */
+    margin-bottom: 20px; /* Space below h2 */
+    color: white; /* White text color for h2 */
+    padding: 20px; /* Padding around h2 */
+    margin-bottom: 1px; /* Space below h2 */
+}
+#about-section h2 
+ span {
+    font-size: 2rem; /* Larger font size for span inside h2 */
+    font-weight: bold; /* Bold text for span inside h2 */
+    color: #f0a500; /* Yellow color for span inside h2 */
+}
+
+.about-container {
+    width: 100%; /* Full width */
+    height: auto; /* Height relative to content */
+    display: flex; /* Flexbox for layout */
+    flex-direction: row; /* Row layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between image and text */
+    flex-wrap: nowrap; /* Wrap items to next line if needed */
+}
+.about-container img {
+    width: 600px; /* Fixed width for image */
+    height: 400px; /* Fixed height for image */
+    border-radius: 10px; /* Rounded corners for image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for image */
+    display: block; /* Block display for image */
+}
+.about-container p {
+    font-size: 1rem; /* Font size for paragraph */
+    color: white; /* White text color for paragraph */
+    max-width: 600px; /* Max width for paragraph */
+    line-height: 1.5; /* Line height for readability */
+    font-weight: lighter; /* Lighter font weight for paragraph */
+    font-style: italic; /* Italic style for paragraph */
+    padding: 10px; /* Padding around paragraph */
+    text-align: justify; /* Justify text */
+}
+
+
+/*About Section Ends Here */
+
 
 /* Picture Section */ 
 #picture-section {
