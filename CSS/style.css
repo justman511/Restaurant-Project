@@ -161,7 +161,7 @@ ul li a {
 /* About Section */
 #about-section {
     width: 100%; /* Full width */
-    height: 800px; /* Height relative to content */
+    height: 600px; /* Height relative to content */
     padding: 20px; /* Padding around content */
     overflow: hidden; /* Hide overflow */
    /* background-color: #1f0202e7;*/
@@ -199,7 +199,7 @@ ul li a {
     flex-wrap: nowrap; /* Wrap items to next line if needed */
 }
 .about-container img {
-    width: 600px; /* Fixed width for image */
+    width: 650px; /* Fixed width for image */
     height: 400px; /* Fixed height for image */
     border-radius: 10px; /* Rounded corners for image */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for image */
